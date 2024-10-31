@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { appContext } from "./AppContext";
 
 const NavBar = () => {
   const navLinks = [
@@ -10,23 +11,24 @@ const NavBar = () => {
       title: "Home",
       link: "#home",
     },
+
     {
-      title: "About",
-      link: "#about",
+      title: "Projects",
+      link: "#projects",
     },
     {
       title: "Skills",
       link: "#skills",
     },
     {
-      title: "Projects",
-      link: "#projects",
+      title: "About",
+      link: "#about",
     },
   ];
+  const{path, setPath} = useContext(appContext)
   useEffect(()=>{
     setPath(window.location.hash || '#home')
   },[])
-  const [path, setPath] = useState('');
   console.log(path);
   return (
     <div className="w-full my-8 text-white text-2xl flex items-center justify-between font-bold gap-6 bg-primary rounded-[60px] h-[100px] py-4 px-14">
