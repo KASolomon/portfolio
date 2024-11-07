@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        darkBg: "#111827",
         primary: "#1e3a8a",
       },
       borderRadius: {
