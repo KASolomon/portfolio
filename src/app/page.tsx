@@ -43,9 +43,14 @@ export default function Home() {
             </h3>
           </div>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ease: "backInOut", duration: "0.5" }}
+            initial={{ opacity: 0, y : 100 }}
+
+            viewport={{once: true}}
+            whileInView={{
+              opacity :1,
+              y:0
+            }}
+            transition={{ ease: "backInOut", duration: "1" }}
             className="  my-10 grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]"
           >
             {expertise.map(({ title, description, image }) => (
