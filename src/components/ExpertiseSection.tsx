@@ -35,7 +35,7 @@ const ExpertiseSection = () => {
         <h1 className="text-center text-[26px] my-4">My Expertise</h1>
 
         <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2">
-          Seamless digital experiences.
+          Cutting Edge Technology
         </h3>
       </div>
       <motion.div
