@@ -10,7 +10,7 @@ const HomeSection = () => {
       <motion.div
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: "0", opacity: 1 }}
-        transition={{ duration: "0.6" }}
+        transition={{ duration: "0.6", stiffness: 300 }}
         className="grid w-full h-[80vh] grid-cols-[0.6fr_0.4fr] "
       >
         <div className=" p-4 flex flex-col justify-center items-center h-full">
