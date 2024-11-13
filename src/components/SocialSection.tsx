@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const SocialSection = () => {
   return (
-    <div id="" className="bg-gradient-to-r from-cyan-800 via-purple-800 to-pink-900 rounded-md mt-36 ">
+    <div className="bg-gradient-to-r from-cyan-800 via-purple-800 to-pink-900 rounded-md mt-36 pt-6">
       <h1 className="text-center text-[26px] my-4 tracking-wider">
         Contact
       </h1>

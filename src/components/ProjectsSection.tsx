@@ -28,7 +28,7 @@ const ProjectsSection = () => {
   const sampleArray = [1,2,3,4,5,6]
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
-    <div id="projects" className="my-16">
+    <div id="projects" className="my-16" style={{ scrollMarginTop: "200px" }}>
       <h1 className="text-center text-[26px] my-4 tracking-wider">
         My Projects
       </h1>

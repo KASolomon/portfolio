@@ -10,9 +10,9 @@ import SocialSection from "@/components/SocialSection";
 export default function Home() {
 
   return (<>
-    <div className="px-10 md:px-24 py-8">
-
         <NavBar />
+    <div className="px-10 md:px-24 pb-8">
+
         <HomeSection />
         <ExpertiseSection />
         <ProjectsSection />
