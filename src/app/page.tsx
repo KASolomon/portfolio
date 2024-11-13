@@ -11,7 +11,7 @@ export default function Home() {
 
   return (<>
     <div className="px-10 md:px-24 py-8">
-      <div className=" flex flex-col ">
+
         <NavBar />
         <HomeSection />
         <ExpertiseSection />
@@ -19,7 +19,6 @@ export default function Home() {
         <EducationSection/>
         <Technologies/>
       </div>
-    </div>
         <SocialSection/>
   </>
   );

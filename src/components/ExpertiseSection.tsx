@@ -30,7 +30,7 @@ const ExpertiseSection = () => {
   ];
 
   return (
-    <div className="mt-16">
+    <div className="mt-16" id="skills">
       <div className="   mb-8">
         <h1 className="text-center text-[26px] my-4 tracking-wider">
           My Expertise

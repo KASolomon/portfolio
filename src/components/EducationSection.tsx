@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const EducationSection = () => {
   return (
-    <div>
+    <div id="about">
       <h1 className="text-center text-[26px] my-4 tracking-wider">
         My Education
       </h1>

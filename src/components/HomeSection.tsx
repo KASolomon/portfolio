@@ -8,6 +8,7 @@ const HomeSection = () => {
   return (
 
       <motion.div
+      id="home"
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: "0", opacity: 1 }}
         transition={{ duration: "0.6", stiffness: 300 }}
