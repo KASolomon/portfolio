@@ -21,7 +21,7 @@ const Technologies = () => {
   ];
   return (
     <div>
-      <h1 className="text-center text-[26px] my-8">This Portfolio</h1>
+      <h1 className="text-center text-[26px] my-8 tracking-wider">This Portfolio</h1>
 
       <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2 mb-6">
         Libraries | Frameworks | API Integrations

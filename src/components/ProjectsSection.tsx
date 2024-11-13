@@ -29,7 +29,9 @@ const ProjectsSection = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
     <div className="my-16">
-      <h1 className="text-center text-[26px] my-4">My Projects</h1>
+      <h1 className="text-center text-[26px] my-4 tracking-wider">
+        My Projects
+      </h1>
 
       <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2 mb-8">
         Seamless digital experiences.

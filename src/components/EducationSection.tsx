@@ -5,7 +5,9 @@ import Image from "next/image";
 const EducationSection = () => {
   return (
     <div>
-      <h1 className="text-center text-[26px] my-4">My Education</h1>
+      <h1 className="text-center text-[26px] my-4 tracking-wider">
+        My Education
+      </h1>
 
       <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2">
         Continuous improvement.

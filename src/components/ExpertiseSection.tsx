@@ -32,7 +32,9 @@ const ExpertiseSection = () => {
   return (
     <div className="mt-16">
       <div className="   mb-8">
-        <h1 className="text-center text-[26px] my-4">My Expertise</h1>
+        <h1 className="text-center text-[26px] my-4 tracking-wider">
+          My Expertise
+        </h1>
 
         <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2">
           Cutting Edge Technology.
