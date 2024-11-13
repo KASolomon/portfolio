@@ -2,6 +2,7 @@ import HomeSection from "@/components/HomeSection";
 import NavBar from "@/components/NavBar";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import EducationSection from "@/components/EducationSection";
 
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
         <NavBar />
         <HomeSection />
         <ExpertiseSection />
-        <ProjectsSection/>
+        <ProjectsSection />
+        <EducationSection/>
       </div>
     </div>
   );
