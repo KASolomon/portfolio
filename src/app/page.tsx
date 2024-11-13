@@ -4,6 +4,7 @@ import ExpertiseSection from "@/components/ExpertiseSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import EducationSection from "@/components/EducationSection";
 import Technologies from "@/components/Technologies";
+import SocialSection from "@/components/SocialSection";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <ProjectsSection />
         <EducationSection/>
         <Technologies/>
+        <SocialSection/>
       </div>
     </div>
   );
