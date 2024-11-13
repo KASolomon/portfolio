@@ -21,12 +21,18 @@ const Technologies = () => {
   ];
   return (
     <div>
-      <h1 className="text-center text-[26px] my-8 tracking-wider">This Portfolio</h1>
+      <h1 className="text-center text-[26px] my-8 tracking-wider">
+        This Portfolio
+      </h1>
 
       <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2 mb-6">
         Libraries | Frameworks | API Integrations
       </h3>
-      <Carousel opts={{ loop: true }} plugins={[Autoplay({ delay: 2000 })]}>
+      <Carousel
+        className=" dark:backdrop-brightness-150 rounded-md mt-10 pt-4"
+        opts={{ loop: true }}
+        plugins={[Autoplay({ delay: 2000 })]}
+      >
         <CarouselContent>
           {logos.map((logo) => (
             <CarouselItem

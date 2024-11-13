@@ -9,7 +9,7 @@ import SocialSection from "@/components/SocialSection";
 
 export default function Home() {
 
-  return (
+  return (<>
     <div className="px-10 md:px-24 py-8">
       <div className=" flex flex-col ">
         <NavBar />
@@ -18,8 +18,9 @@ export default function Home() {
         <ProjectsSection />
         <EducationSection/>
         <Technologies/>
-        <SocialSection/>
       </div>
     </div>
+        <SocialSection/>
+  </>
   );
 }

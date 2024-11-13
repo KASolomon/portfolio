@@ -7,8 +7,15 @@ import Link from 'next/link'
 
 const SocialSection = () => {
   return (
-    <div className="bg-gradient-to-r from-cyan-800 via-purple-800 to-pink-900 rounded-md mt-10">
-      <div className="flex items-center justify-around my-6 ">
+    <div className="bg-gradient-to-r from-cyan-800 via-purple-800 to-pink-900 rounded-md mt-36 ">
+      <h1 className="text-center text-[26px] my-4 tracking-wider">
+        Contact
+      </h1>
+
+      <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2">
+        Open to all work.
+      </h3>
+      <div className="flex items-center justify-around my-16 ">
         <p className="inline  text-3xl">Let's connect: </p>
         <div className="flex gap-12">
           <Link
@@ -29,8 +36,9 @@ const SocialSection = () => {
         </div>
       </div>
 
-      <p className="text-center mt-10 text-xl">
-        Copyright &copy; 2024. All Rights Reserved.
+      <p className="text-center mt-10 text-xl pb-4">
+        Copyright &copy; 2024. All Rights Reserved.{"  "}|{"  "}Connected to the
+        GitHub API
       </p>
     </div>
   );
