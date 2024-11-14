@@ -1,8 +1,7 @@
 "use client";
+
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { appContext } from "./AppContext";
 
 const NavBar = () => {
@@ -13,12 +12,12 @@ const NavBar = () => {
     },
 
     {
-      title: "Projects",
-      link: "#projects",
-    },
-    {
       title: "Skills",
       link: "#skills",
+    },
+    {
+      title: "Projects",
+      link: "#projects",
     },
     {
       title: "About",
@@ -29,9 +28,11 @@ const NavBar = () => {
   useEffect(()=>{
     setPath(window.location.hash || '#home')
   },[])
-  console.log(path);
+
+  
   return (
     <div className="bg-white/20 pt-8 backdrop-blur-sm sticky top-0 z-50 ">
+     
       <div className="w-full mb-8 text-white text-2xl flex items-center justify-between font-bold gap-6 bg-primary h-[100px] py-4 px-14 ">
         {navLinks.map(({ title, link }, index) => {
           if (index == 2)
