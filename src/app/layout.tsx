@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={` ${manrope.variable} font-sans  dark:bg-darkBg`}>
+      <body className={` ${manrope.variable} font-sans bg-neutral-100 dark:bg-darkBg`}>
         <ThemeProvider attribute="class" defaultTheme="system">
           <AppContextProvider>
 
