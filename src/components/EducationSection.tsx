@@ -35,7 +35,7 @@ const EducationSection = () => {
             <p className="my-6 text-xl">
               In November 2023, I graduated from the Kwame Nkrumah University of
               Science and Technology with a first class(Hons.) degree in
-              Computer Science, a testament to my hardwork and perseverance.{" "}
+              Computer Science.
             </p>
           </div>
         </div>
