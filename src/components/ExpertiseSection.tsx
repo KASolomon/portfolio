@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from "next/image";
 import * as motion from 'framer-motion/client';
+import CatchPhrase from './CatchPhrase';
+import PreCatch from './PreCatch';
 interface Expertise {
   title: string;
   description: string;
@@ -32,13 +34,9 @@ const ExpertiseSection = () => {
   return (
     <div className="mt-16" id="skills" style={{ scrollMarginTop: "200px" }}>
       <div className="   mb-8">
-        <h1 className="text-center text-[26px] my-4 tracking-wider">
-          My Expertise
-        </h1>
+        <PreCatch message='My Expertise'/>
 
-        <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2">
-          Cutting Edge Technology.
-        </h3>
+        <CatchPhrase phrase=" Cutting Edge Technology." />
       </div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -48,14 +46,14 @@ const ExpertiseSection = () => {
           y: 0,
         }}
         transition={{ ease: "backInOut", duration: "1" }}
-        className="  my-10 grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]"
+        className="my-10 grid gap-6 lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]"
       >
         {expertise.map(({ title, description, image }) => (
           <div
             key={title}
-            className="group rounded-xl overflow-hidden shadow-md shadow-gray-300 translate-transform transform hover:scale-105 duration-500 "
+            className="group rounded-xl overflow-hidden shadow-md shadow-gray-300 translate-transform transform hover:scale-105 duration-500  h-full"
           >
-            <div className="  mb-6  w-full  h-[40vh] md:h-[30vh] relative">
+            <div className="  mb-6 w-full  h-[40vh] md:h-[30vh] relative">
               <Image
                 alt="reactjs image"
                 className=" object-cover"

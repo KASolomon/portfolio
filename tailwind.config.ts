@@ -20,7 +20,7 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      fontFamily: { sans: ["var(--font--manrope)"] },
+      fontFamily: { sans: ["var(--font--manrope)"], dancing:["var(--font--dancing)"] },
     },
   },
   plugins: [require("tailwindcss-animate")],

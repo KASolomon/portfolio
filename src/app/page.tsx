@@ -12,7 +12,7 @@ export default function Home() {
 
   return (<>
         <NavBar />
-    <div className="mx-10 md:mx-24 pb-16 pt-8 px-4  rounded-md dark:shadow-none shadow-lg shadow-gray-300">
+    <div className="mx-6 md:mx-24 pb-16 pt-8 px-4  rounded-md dark:shadow-none shadow-lg shadow-gray-300">
 <ToggleModeButton/>
         <HomeSection />
         <ExpertiseSection />

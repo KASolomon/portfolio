@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import {Manrope} from "next/font/google";
+import {Dancing_Script} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import AppContextProvider from "@/components/AppContext";
@@ -15,6 +16,11 @@ const manrope = Manrope({
   display: "swap", 
   variable: "--font--manrope"
 })
+const dancing = Dancing_Script({
+  subsets:['latin'],
+  display: "swap", 
+  variable: "--font--dancing"
+})
 
 export default function RootLayout({
   children,
@@ -23,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={` ${manrope.variable} font-sans bg-neutral-100 dark:bg-darkBg`}>
+      <body className={` ${manrope.variable} ${dancing.variable} font-sans w-full bg-neutral-100 dark:bg-darkBg`}>
         <ThemeProvider attribute="class" defaultTheme="system">
           <AppContextProvider>
 
