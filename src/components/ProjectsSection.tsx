@@ -1,19 +1,19 @@
 "use client";
-import React, { Suspense, useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
-import * as motion from "framer-motion/client";
-import Autoplay from "embla-carousel-autoplay";
 import { getPortfolioRepos, RepoData } from "@/lib/actions";
-import { Skeleton } from "./ui/skeleton";
+import Autoplay from "embla-carousel-autoplay";
+import * as motion from "framer-motion/client";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import CatchPhrase from "./CatchPhrase";
 import PreCatch from "./PreCatch";
+import { Skeleton } from "./ui/skeleton";
 const ProjectsSection = () => {
   const [repoData, setRepoData] = useState<RepoData[]>();
   const [iframeReady, setIframeReady] = useState(false)

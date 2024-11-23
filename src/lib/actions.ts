@@ -1,6 +1,5 @@
 "use server";
 
-import { cacheLife } from "next/dist/server/use-cache/cache-life";
 
 export interface RepoData {
   name: string;
@@ -28,7 +27,7 @@ export const getPortfolioRepos = async () => {
     ];
     // Fetching data from github API and storing it in a variable.
     const repos: RepoData[] = [];
-    for (let repo of portfolioRepos) {
+    for (const repo of portfolioRepos) {
       const res = await fetch(
         `https://api.github.com/repos/KASolomon/${repo}`,
         {

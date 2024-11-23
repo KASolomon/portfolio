@@ -17,7 +17,7 @@ const HomeSection = () => {
       <div className=" lg:p-4 flex flex-col justify-center items-center h-full">
         <p className=" text-6xl lg:text-8xl">👋</p>
         <h1 className=" bg-gradient-to-r from-fuchsia-400 via-purple-700 to-violet-900 text-transparent bg-clip-text text-4xl lg:text-6xl font-bold">
-          I'm Solomon Kusi-Appiah.
+          I&apos;m Solomon Kusi-Appiah.
         </h1>
         <p className=" text-slate-500 dark:text-slate-300 text-xl lg:text-3xl tracking-wider my-8 text-center italic">
           I build beautiful, user-friendly web & mobile experiences with Next.js

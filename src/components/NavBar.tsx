@@ -1,16 +1,15 @@
 "use client";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Link from "next/link";
-import React, { useContext, useEffect } from "react";
-import { appContext } from "./AppContext";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuTrigger,
+  DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
+import React, { useContext, useEffect } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { appContext } from "./AppContext";
 
 const NavBar = () => {
   const navLinks = [
@@ -35,7 +34,7 @@ const NavBar = () => {
   const { path, setPath } = useContext(appContext);
   useEffect(() => {
     setPath(window.location.hash || "#home");
-  }, []);
+  }, [setPath]);
 
   return (
     <div className=" bg-white/20 pt-8 backdrop-blur-sm sticky top-0 z-50 ">
