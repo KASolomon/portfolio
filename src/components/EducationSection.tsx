@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import CatchPhrase from './CatchPhrase';
-import PreCatch from './PreCatch';
+import CatchPhrase from "./CatchPhrase";
+import PreCatch from "./PreCatch";
 
 const EducationSection = () => {
   return (
-    <div id="about" style={{scrollMarginTop : '200px' }}>
-      
-      <PreCatch message="My Education"/>
-     <CatchPhrase phrase='Continuous Improvement' />
+    <div id="about" style={{ scrollMarginTop: "200px" }}>
+      <PreCatch message="My Education" />
+      <CatchPhrase phrase="Continuous Improvement" />
       <div className="my-6  rounded-lg   ">
         <div className="overflow-hidden flex flex-col justify-center h-full shadow-md shadow-gray-200  rounded-lg ">
           <div className="w-full h-[200px] relative p-4 mb-4 dark:bg-white/20 ">
@@ -22,15 +21,15 @@ const EducationSection = () => {
           </div>
           <div className="p-6">
             <div className="flex flex-col lg:flex-row gap-6 items-center">
-              <p className="text-xl lg:text-3xl font-semibold inline ">
+              <p className="text-lg lg:text-2xl font-semibold inline ">
                 Bachelor of Science Degree - Computer Science
               </p>
               <ul className="list-none list-inside lg:list-disc ">
-                <li className="text-xl">2023</li>
+                <li className="text-lg">2023</li>
               </ul>
             </div>
 
-            <p className="my-6 text-xl">
+            <p className="my-6 text-lg">
               In November 2023, I graduated from the Kwame Nkrumah University of
               Science and Technology with a first class(Hons.) degree in
               Computer Science.
@@ -42,21 +41,21 @@ const EducationSection = () => {
             <div className="w-full h-[200px] relative mb-4">
               <Image
                 alt="microsoft logo"
-                className='object-contain lg:object-cover'
+                className="object-contain lg:object-cover"
                 src="/microsoft.png"
                 fill
               />
             </div>
             <div className="p-6 my-10 lg:my-0 ">
               <div className="flex flex-col lg:flex-row gap-6 items-center">
-                <p className="text-xl lg:text-2xl  font-semibold">
+                <p className="text-lg lg:text-xl  font-semibold">
                   Microsoft Technology Associate
                 </p>
                 <ul className="list-none list-inside lg:list-disc ">
-                  <li className="text-xl">2020</li>
+                  <li className="text-lg">2020</li>
                 </ul>
               </div>
-              <p className=" mt-6 text-xl">
+              <p className=" mt-6 text-lg">
                 Software Development Fundamentals. Verify at{" "}
                 <Link
                   className="text-fuchsia-600"
@@ -69,7 +68,7 @@ const EducationSection = () => {
               </p>
             </div>
           </div>
-          <div className=" w-full rounded-lg text-xl shadow-md shadow-gray-200 max-w-[600px]">
+          <div className=" w-full rounded-lg text-lg shadow-md shadow-gray-200 max-w-[600px]">
             <div className="w-full h-[250px]  relative mb-4">
               <Image
                 alt="codewithmosh logo"
@@ -80,9 +79,11 @@ const EducationSection = () => {
             </div>
             <div className="p-6">
               <div className="flex flex-col lg:flex-row gap-2 lg:gap-6  items-center">
-                <p className="text-xl lg:text-2xl  font-semibold">Codewithmosh.com</p>
+                <p className="text-lg lg:text-xl  font-semibold">
+                  Codewithmosh.com
+                </p>
                 <ul className="list-none list-inside lg:list-disc mb-4 lg:mb-0">
-                  <li className="text-xl">Always</li>
+                  <li className="text-lg">Always</li>
                 </ul>
               </div>
               <ul className="list-inside list-disc">
@@ -99,6 +100,6 @@ const EducationSection = () => {
       </div>
     </div>
   );
-}
+};
 
-export default EducationSection
+export default EducationSection;

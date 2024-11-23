@@ -16,28 +16,26 @@ import PreCatch from "./PreCatch";
 import { Skeleton } from "./ui/skeleton";
 const ProjectsSection = () => {
   const [repoData, setRepoData] = useState<RepoData[]>();
-  const [iframeReady, setIframeReady] = useState(false)
-  const [dataReady, setDataReady] = useState(false)
+  const [iframeReady, setIframeReady] = useState(false);
+  const [dataReady, setDataReady] = useState(false);
 
   useEffect(() => {
     const fetchProjects = async () => {
       setRepoData(await getPortfolioRepos());
     };
     fetchProjects();
-    setDataReady(true)
+    setDataReady(true);
   }, []);
-  const sampleArray = [1,2,3,4,5,6]
+  const sampleArray = [1, 2, 3, 4, 5, 6];
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
     <div id="projects" className="my-16" style={{ scrollMarginTop: "200px" }}>
-     
       <PreCatch message="My Projects" />
-       
 
       <CatchPhrase phrase=" Seamless digital experiences." />
       <Carousel
         plugins={[plugin.current]}
-        opts={{loop:true}}
+        opts={{ loop: true }}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
         className="mx-4"
@@ -89,10 +87,10 @@ const ProjectsSection = () => {
                       stiffness: 300,
                     }}
                   >
-                    <div className="text-2xl font-semibold group-hover:bg-gradient-to-r from-orange-500 via-pink-600 to-fuchsia-600 group-hover:bg-clip-text group-hover:text-transparent ">
+                    <div className="text-xl font-semibold group-hover:bg-gradient-to-r from-orange-500 via-pink-600 to-fuchsia-600 group-hover:bg-clip-text group-hover:text-transparent ">
                       {repo.name}
                     </div>
-                    <div className="text-xl leading-loose mt-6">
+                    <div className="text-lg leading-loose mt-6">
                       {repo.description}
                     </div>
                   </motion.div>

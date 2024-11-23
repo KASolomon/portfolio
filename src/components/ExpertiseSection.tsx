@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
-import * as motion from 'framer-motion/client';
-import CatchPhrase from './CatchPhrase';
-import PreCatch from './PreCatch';
+import * as motion from "framer-motion/client";
+import CatchPhrase from "./CatchPhrase";
+import PreCatch from "./PreCatch";
 interface Expertise {
   title: string;
   description: string;
@@ -10,7 +10,7 @@ interface Expertise {
 }
 
 const ExpertiseSection = () => {
-      const expertise: Expertise[] = [
+  const expertise: Expertise[] = [
     {
       title: "Frontend Web Development",
       description:
@@ -34,7 +34,7 @@ const ExpertiseSection = () => {
   return (
     <div className="mt-16" id="skills" style={{ scrollMarginTop: "200px" }}>
       <div className="   mb-8">
-        <PreCatch message='My Expertise'/>
+        <PreCatch message="My Expertise" />
 
         <CatchPhrase phrase=" Cutting Edge Technology." />
       </div>
@@ -62,16 +62,16 @@ const ExpertiseSection = () => {
               />
             </div>
             <div className="p-6 text-center">
-              <div className="text-2xl font-semibold group-hover:bg-gradient-to-r from-orange-500 via-pink-600 to-fuchsia-600 group-hover:bg-clip-text group-hover:text-transparent ">
+              <div className="text-xl font-semibold group-hover:bg-gradient-to-r from-orange-500 via-pink-600 to-fuchsia-600 group-hover:bg-clip-text group-hover:text-transparent ">
                 {title}
               </div>
-              <div className="text-xl leading-loose mt-6">{description}</div>
+              <div className="text-lg leading-loose mt-6">{description}</div>
             </div>
           </div>
         ))}
       </motion.div>
     </div>
   );
-}
+};
 
-export default ExpertiseSection
+export default ExpertiseSection;
