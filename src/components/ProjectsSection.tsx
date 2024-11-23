@@ -12,7 +12,8 @@ import * as motion from "framer-motion/client";
 import Autoplay from "embla-carousel-autoplay";
 import { getPortfolioRepos, RepoData } from "@/lib/actions";
 import { Skeleton } from "./ui/skeleton";
-
+import CatchPhrase from "./CatchPhrase";
+import PreCatch from "./PreCatch";
 const ProjectsSection = () => {
   const [repoData, setRepoData] = useState<RepoData[]>();
   const [iframeReady, setIframeReady] = useState(false)
@@ -29,15 +30,14 @@ const ProjectsSection = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
     <div id="projects" className="my-16" style={{ scrollMarginTop: "200px" }}>
-      <h1 className="text-center text-[26px] my-4 tracking-wider">
-        My Projects
-      </h1>
+     
+      <PreCatch message="My Projects" />
+       
 
-      <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2 mb-8">
-        Seamless digital experiences.
-      </h3>
+      <CatchPhrase phrase=" Seamless digital experiences." />
       <Carousel
         plugins={[plugin.current]}
+        opts={{loop:true}}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
         className="mx-4"
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
           {dataReady
             ? repoData?.map((repo) => (
                 <CarouselItem
-                  className="  md:min-w-[500px] lg:min-w-[600px]  shadow-md shadow-gray-200 overflow-hidden my-4 ml-4   rounded-lg min-h-full flex-1"
+                  className="  min-w-[95%] lg:min-w-[600px]  shadow-md shadow-gray-200 overflow-hidden my-4 ml-4   rounded-lg min-h-full flex-1"
                   key={repo.id}
                 >
                   <div className="w-full h-[30vh] relative">

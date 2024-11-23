@@ -1,15 +1,14 @@
 "use client"
-import React from "react";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
+  CarouselItem
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
-import Autoplay from "embla-carousel-autoplay";
+import CatchPhrase from "./CatchPhrase";
+import PreCatch from './PreCatch';
 const Technologies = () => {
   const logos = [
     { src: "/react.png", href: "https://react.dev/" },
@@ -21,15 +20,12 @@ const Technologies = () => {
   ];
   return (
     <div>
-      <h1 className="text-center text-[26px] my-8 tracking-wider">
-        This Portfolio
-      </h1>
-
-      <h3 className="bg-clip-text bg-gradient-to-r from-pink-700 via-purple-600 to-sky-600 text-transparent text-center text-5xl  font-semibold p-2 mb-6">
-        Libraries | Frameworks | API Integrations
-      </h3>
+     
+    <PreCatch message="This Portfolio"/>
+        
+      <CatchPhrase phrase="Libraries | Frameworks | API Integrations"/>
       <Carousel
-        className=" dark:backdrop-brightness-150 rounded-md mt-10 pt-4"
+        className=" dark:backdrop-brightness-150 rounded-md mt-10 lg:pt-4 py-10"
         opts={{ loop: true }}
         plugins={[Autoplay({ delay: 2000 })]}
       >

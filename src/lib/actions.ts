@@ -19,7 +19,13 @@ const transformRepoName = (repoName: string) => {
 // This function fetches portfolio repos from github API and returns them.
 export const getPortfolioRepos = async () => {
   try {
-    const portfolioRepos = ["Stock_20", "game-hub","next-blog-app", "techsirl_pay"];
+    const portfolioRepos = [
+      "game-hub",
+      "Mo-cranes-website",
+      "techsirl_pay",
+      "PRH",
+      "TradeIt",
+    ];
     // Fetching data from github API and storing it in a variable.
     const repos: RepoData[] = [];
     for (let repo of portfolioRepos) {
